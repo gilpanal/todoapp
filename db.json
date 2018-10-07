@@ -1,0 +1,22 @@
+{
+  "gil": [
+    {
+      "todo": "My first task",
+      "id": 1
+    },
+    {
+      "todo": "Very urgent",
+      "id": 2
+    }
+  ],
+  "panal": [
+    {
+      "todo": "Meeting",
+      "id": 1
+    },
+    {
+      "todo": "Go to gym",
+      "id": 2
+    }
+  ]
+}
