@@ -41,3 +41,120 @@ You should send this authorization with any request to the protected endpoints
 ```
 Authorization: Bearer <ACCESS_TOKEN>
 ```
+
+![Screenshot](screnshots/login.png)
+
+
+You can check if token is well formatted at : <a href='https://jwt.io/#debugger'>https://jwt.io/#debugger</a>
+
+
+## Available APIs
+
+You can use <a href='https://www.getpostman.com/'>POSTMAN</a> to check the different endpoints
+
+
+### Get all Todos from a specific user
+
+PUBLIC
+
+```
+GET http://localhost:3000/api/all/:user
+
+```
+
+PRIVATE
+
+```
+GET http://localhost:3000/api/:user
+
+```
+
+![Screenshot](screnshots/getall.png)
+
+### Add a new Todo to a specific user
+
+PUBLIC
+
+```
+POST http://localhost:3000/api/add/:user
+
+```
+
+PRIVATE
+
+```
+POST http://localhost:3000/api/:user
+
+```
+
+Body:
+
+```
+{  
+  "todo":"New task"
+}
+```
+
+![Screenshot](screnshots/addtask.png)
+
+### Delete Todo by ID to a specific user
+
+PUBLIC
+
+```
+DELETE http://localhost:3000/api/delete/:user/:id
+
+```
+
+PRIVATE
+
+```
+DELETE http://localhost:3000/api/:user/:id
+
+```
+
+![Screenshot](screnshots/deletetask.png)
+
+### Update Todo by ID to a specific user
+
+PUBLIC 
+
+```
+PUT http://localhost:3000/api/update/:user/:id
+
+```
+
+PRIVATE 
+
+```
+PUT http://localhost:3000/api/:user/:id
+
+```
+
+Body:
+
+```
+{  
+  "todo":"Updated task"
+}
+```
+
+![Screenshot](screnshots/updatetask.png)
+
+### Filter Todos from a specific user by text
+
+PUBLIC
+
+```
+GET http://localhost:3000/api/filter/:user/:query
+
+```
+
+PRIVATE
+
+```
+GET http://localhost:3000/api/:user?q=query
+
+```
+
+![Screenshot](screnshots/filter.png)
