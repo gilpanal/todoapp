@@ -2,6 +2,8 @@
 
 A Fake REST API using json-server with JWT authentication for a simple TODO app
 
+![Diagram](diagram.png)
+
 ## Install
 
 ```bash
