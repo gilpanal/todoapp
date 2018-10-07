@@ -42,7 +42,7 @@ You should send this authorization with any request to the protected endpoints
 Authorization: Bearer <ACCESS_TOKEN>
 ```
 
-![Screenshot](screnshots/login.png)
+![Screenshot](screenshots/login.png)
 
 
 You can check if token is well formatted at : <a href='https://jwt.io/#debugger'>https://jwt.io/#debugger</a>
@@ -69,7 +69,7 @@ GET http://localhost:3000/api/:user
 
 ```
 
-![Screenshot](screnshots/getall.png)
+![Screenshot](screenshots/getall.png)
 
 ### Add a new Todo to a specific user
 
@@ -95,7 +95,7 @@ Body:
 }
 ```
 
-![Screenshot](screnshots/addtask.png)
+![Screenshot](screenshots/addtask.png)
 
 ### Delete Todo by ID to a specific user
 
@@ -113,7 +113,7 @@ DELETE http://localhost:3000/api/:user/:id
 
 ```
 
-![Screenshot](screnshots/deletetask.png)
+![Screenshot](screenshots/deletetask.png)
 
 ### Update Todo by ID to a specific user
 
@@ -139,7 +139,7 @@ Body:
 }
 ```
 
-![Screenshot](screnshots/updatetask.png)
+![Screenshot](screenshots/updatetask.png)
 
 ### Filter Todos from a specific user by text
 
@@ -157,4 +157,4 @@ GET http://localhost:3000/api/:user?q=query
 
 ```
 
-![Screenshot](screnshots/filter.png)
+![Screenshot](screenshots/filter.png)
