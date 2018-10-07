@@ -2,6 +2,8 @@
 
 A Fake REST API using json-server with JWT authentication for a simple TODO app
 
+## Architecture
+
 ![Diagram](diagram.png)
 
 ## Install
